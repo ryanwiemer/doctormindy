@@ -2,23 +2,14 @@
 # Generated Stuff
 .sass-cache
 .sass-cache/*
-css/*.map
-
-# bundling output
-build/*
-build
-dist/*
-dist
 
 # Node Modules
 node_modules/*
 node_modules
 
-
 # OS X Junk
 .DS_Store
 .DS_Store/*
-
 
 # Not-Needed System Files
 *.swp
@@ -28,6 +19,6 @@ node_modules
 bower_components
 bower_components/*
 
-#Final Assets Folder (Use Grunt to generate this)
+#The assets folder is a basically a build folder
 assets
 assets/*
