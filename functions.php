@@ -5,23 +5,7 @@
  * @package doctormindy
  */
 
-if ( ! function_exists( 'doctormindy_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
-function doctormindy_setup() {
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'doctormindy' ),
-	) );
-
-}
-endif; // doctormindy_setup
 add_action( 'after_setup_theme', 'doctormindy_setup' );
 
 /**
@@ -44,7 +28,7 @@ add_action( 'widgets_init', 'doctormindy_widgets_init' );
  */
 function doctormindy_scripts() {
 	wp_enqueue_style( 'doctormindy-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css' );
-	wp_enqueue_script( 'doctormindy-script',  get_template_directory_uri() . '/assets/js/global.min.js', array('jquery'));
+	wp_enqueue_script( 'doctormindy-script',  get_template_directory_uri() . '/assets/js/global.min.js', array('jquery-core'));
 
 }
 add_action( 'wp_enqueue_scripts', 'doctormindy_scripts' );
