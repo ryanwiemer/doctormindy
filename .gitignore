@@ -22,3 +22,6 @@ bower_components/*
 #The assets folder is a basically a build folder
 assets
 assets/*
+
+#Compiled CSS folder
+source/css

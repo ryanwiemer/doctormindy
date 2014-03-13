@@ -43,6 +43,6 @@ module.exports = function(grunt) {
   grunt.registerTask('dev', ['watch']);
 
   // Add Deploy task here
-  //grunt.registerTask('deploy', ['clean']);
+  //grunt.registerTask('deploy');
 
 };

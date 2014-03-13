@@ -43,13 +43,10 @@ add_action( 'widgets_init', 'doctormindy_widgets_init' );
  * Enqueue scripts and styles.
  */
 function doctormindy_scripts() {
-	wp_enqueue_style( 'doctormindy-style', get_template_directory_uri() . '/assets/css/style.min.css' );
+	wp_enqueue_style( 'doctormindy-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css' );
+	wp_enqueue_script( 'doctormindy-script',  get_template_directory_uri() . '/assets/js/global.min.js', array('jquery'));
 
 }
 add_action( 'wp_enqueue_scripts', 'doctormindy_scripts' );
 
 
-/**
- * Custom functions that act independently of the theme templates.
- */
-require get_template_directory() . '/inc/extras.php';
