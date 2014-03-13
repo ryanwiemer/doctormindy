@@ -10,7 +10,7 @@ module.exports = {
     }
   },
   css: {
-    files: ['assets/scss/*.scss','assets/scss/*/*.scss'],
+    files: ['source/scss/*.scss','source/scss/*/*.scss'],
     tasks: ['sass', 'autoprefixer', 'cssmin'],
     options: {
       spawn: false,

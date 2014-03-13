@@ -5,13 +5,6 @@
  * @package doctormindy
  */
 
-/**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
-}
-
 if ( ! function_exists( 'doctormindy_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -21,17 +14,6 @@ if ( ! function_exists( 'doctormindy_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function doctormindy_setup() {
-
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on doctormindy, use a find and replace
-	 * to change 'doctormindy' to the name of your theme in all the template files
-	 */
-	load_theme_textdomain( 'doctormindy', get_template_directory() . '/languages' );
-
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
@@ -96,10 +78,6 @@ function doctormindy_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'doctormindy_scripts' );
 
-/**
- * Implement the Custom Header feature.
- */
-//require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -110,13 +88,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack.php';
