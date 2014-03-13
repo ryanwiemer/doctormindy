@@ -1,14 +1,10 @@
 <?php
 /**
  * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after
- *
- * @package doctormindy
  */
 ?>
 
-	</div><!-- #content -->
+	</div><!-- .content -->
 
 	<footer class="footer">
 			<p>Footer goes here.</p>

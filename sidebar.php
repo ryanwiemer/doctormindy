@@ -5,9 +5,7 @@
  * @package doctormindy
  */
 ?>
-	<div id="secondary" class="widget-area" role="complementary">
+	<div class="sidebar">
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-
-
 		<?php endif; // end sidebar widget area ?>
-	</div><!-- #secondary -->
+	</div><!-- .sidebar -->

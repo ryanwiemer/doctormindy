@@ -5,7 +5,7 @@ Initial Setup
 - `cd` into folder
 - `npm update`
 - `bower update`
-- `grunt` (which is basically a build process)
+- `grunt` (default task is basically a build process)
 -  `grunt dev` (to initialize watch task)
 
 
