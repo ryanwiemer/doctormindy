@@ -1,11 +1,12 @@
 
-Initial Setup
+Setup and Grunt tasks
 ===
 
 - `cd` into folder
 - `npm update`
 - `bower update`
 - `grunt` (default task is basically a build process)
+- `grunt clean` (to wipe out the assets, node_mdoules, and bower_companents)
 -  `grunt dev` (to initialize watch task)
 
 
