@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying 404 pages (Not Found).
+ * The template for displaying 404 pages (Clean up needed).
  */
 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					
+
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
