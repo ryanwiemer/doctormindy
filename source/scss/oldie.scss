@@ -7,7 +7,7 @@ $oldie: true;
 @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../../bower_components/neat/app/assets/stylesheets/neat";
 
-//Variables 
+//Variables
 @import "_vars";
 
 //Generic
@@ -22,7 +22,6 @@ $oldie: true;
 @import "base/_animations";
 
 //Objects
-
-
+@import "objects/_hero";
 
 @import "_shame";

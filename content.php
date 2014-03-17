@@ -5,9 +5,10 @@
 ?>
 
 <article <?php post_class(); ?>>
-  <header class="entry-header">
-    <h1 class="entry-title"><?php the_title(); ?></h1>
-  </header><!-- .entry-header -->
+<div class="hero" style="background-image: url('<?php the_field('hero_image'); ?>');">
+    <h2 class="hero-title"><?php the_field('hero_title'); ?></h2>
+    <h3 class="hero-subtitle"><?php the_field('hero_subtitle'); ?></h3>
+</div>
 
   <div class="entry-content">
     <?php the_content(); ?>
@@ -18,4 +19,4 @@
       ) );
     ?>
   </div><!-- .entry-content -->
-</article><!-- #post-## -->
+</article>
