@@ -3,25 +3,26 @@
  * --------------- */
 
 .hero {
-  height: 620px;
-  @include span-columns(12);
+  height: 540px;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
 }
 
 .hero__content {
-  margin: 0 auto
-
+  margin: 0 auto;
 }
 
 .hero__title {
   font-family: $GloberRegular;
-  font-size: 60px;
+  font-size: 45px;
   text-align: left;
-  @include span-columns(8);
+  @include span-columns(6);
+  @extend %clearfix;
+  margin-top: 80px;
 }
 
 .hero__subtitle {
@@ -29,13 +30,46 @@
   font-size: 24px;
   text-align: left;
   @include span-columns(6);
+  @extend %clearfix;
+
 }
 
+.hero__cta {
+  float: left;
+  background: $highlight;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $GloberxBold;
+  padding: 5px 10px;
+  margin: 20px 0;
+  @extend %clearfix;
+}
+
+
+
 .hero__links {
-  @include span-columns(12);
-  text-align: left;
+  position: absolute;
+  bottom: 0;
+}
+
+.hero__links li {
+  display: inline-block;
 }
 
 .hero__links li a {
+  font-family: $GloberBold;
+  background: $highlight;
+  border: 1px solid $highlight;
+  color: black;
   text-align: left;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 50px;
+  width: 100px;
+
+  &:hover {
+    border: 1px solid black;
+    background: none;
+  }
 }

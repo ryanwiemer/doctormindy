@@ -12,7 +12,7 @@
 
 	<header class="header">
 		<div class="site-title">
-			<h1 class="site-title__name"><?php bloginfo( 'name' ); ?></h1>
+			<h1 class="site-title__name"><a href="<?php echo site_url(); ?>">Dr. Mindy Buoncristiani</a></h1><span class="site-title__tagline">Practice limited to conventional and micro-surgical endodontics.</span>
 		</div>
 		<nav class="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

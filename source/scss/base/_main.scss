@@ -3,14 +3,26 @@
  * --------------- */
 
 body {
-	font-family: $GloberBook;
+	font-family: $GloberRegular;
 	font-weight: normal;
 }
 
 .content {
-  margin: 0 auto;
-  width: 1200px;
-  @extend %clearfix;
+  width: 1000px;
+  @include outer-container;
+  margin: 60px auto 0;
+}
+
+.header {
+  width: 1000px;
+}
+
+.hero__content {
+  width: 1000px;
+}
+
+.hero {
+  min-width: 1000px;
 }
 
 .section {
