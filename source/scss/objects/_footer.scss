@@ -1,0 +1,15 @@
+/* --------------- *
+ *      Footer     *
+ * --------------- */
+
+.footer{
+  height: 75px;
+  border-top: solid 1px black;
+  padding-top: 10px;
+  margin-top: 20px;
+  @include span-columns(12);
+}
+
+.footer__copyright {
+  text-align: left;
+}

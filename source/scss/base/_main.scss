@@ -7,6 +7,16 @@ body {
 	font-weight: normal;
 }
 
-.entry-content {
+.content {
   margin: 0 auto;
+  width: 1200px;
+  @extend %clearfix;
+}
+
+.section {
+  @include span-columns(8);
+}
+
+.sidebar {
+
 }

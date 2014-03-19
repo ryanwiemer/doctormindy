@@ -1,0 +1,19 @@
+/* --------------- *
+ *      Header     *
+ * --------------- */
+
+.header {
+  @include span-columns(8);
+  margin: 30px auto 20px;
+}
+
+.site-title__name {
+  font-size: 40px;
+}
+
+.navigation {
+}
+.navigation ul li{
+  display: inline-block;
+  margin-right: 70px;
+}

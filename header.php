@@ -12,7 +12,7 @@
 
 	<header class="header">
 		<div class="site-title">
-			<h1 class="site-title__name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title__name"><?php bloginfo( 'name' ); ?></h1>
 		</div>
 		<nav class="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

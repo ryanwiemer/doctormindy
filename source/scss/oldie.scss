@@ -17,11 +17,14 @@ $oldie: true;
 
 //Base
 @import "base/_main";
+@import "base/_headings";
 @import "base/_typography";
 @import "base/_images";
 @import "base/_animations";
 
 //Objects
 @import "objects/_hero";
+@import "objects/_header";
+@import "objects/_footer";
 
 @import "_shame";

@@ -3,14 +3,9 @@
  * Footer
  */
 ?>
-
-	</div><!-- .content -->
-
 	<footer class="footer">
-			<p>Footer goes here.</p>
+			<p class="footer__copyright">&copy; Copyright <?php echo date("Y") ?> Dr. Mindy Buoncristiani</p>
 	</footer>
-
 <?php wp_footer(); ?>
-
 </body>
 </html>
