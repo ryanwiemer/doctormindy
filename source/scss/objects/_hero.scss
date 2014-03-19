@@ -43,18 +43,18 @@
   font-family: $GloberxBold;
   padding: 5px 10px;
   margin: 20px 0;
-  @extend %clearfix;
 }
 
 
 
 .hero__links {
   position: absolute;
-  bottom: 0;
+  bottom: -60px;
 }
 
 .hero__links li {
-  display: inline-block;
+  float: left;
+  margin-right: 30px;
 }
 
 .hero__links li a {
@@ -62,11 +62,14 @@
   background: $highlight;
   border: 1px solid $highlight;
   color: black;
-  text-align: left;
   text-decoration: none;
-  margin-right: 20px;
-  padding: 50px;
-  width: 100px;
+  display: block;
+  height: 150px;
+  width: 150px;
+  vertical-align: bottom;
+  padding-top: 80px;
+  padding-left: 10px;
+
 
   &:hover {
     border: 1px solid black;
