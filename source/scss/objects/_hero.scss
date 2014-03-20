@@ -3,7 +3,7 @@
  * --------------- */
 
 .hero {
-  height: 540px;
+  height: 450px;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -18,43 +18,48 @@
 
 .hero__title {
   font-family: $GloberRegular;
-  font-size: 45px;
+  font-size: 56px;
   text-align: left;
-  @include span-columns(6);
-  @extend %clearfix;
+  @include span-columns(7);
   margin-top: 80px;
+  color: $secondary;
 }
 
 .hero__subtitle {
   font-family: $GloberSemiBold;
   font-size: 24px;
   text-align: left;
-  @include span-columns(6);
-  @extend %clearfix;
-
+  margin-top: 28px;
+  color: $secondary;
+  line-height: 1.2;
+  text-align: left;
+  clear: both;
+  width: 500px;
 }
 
 .hero__cta {
-  float: left;
+  float:left;
   background: $highlight;
   color: black;
   text-decoration: none;
   text-transform: uppercase;
   font-family: $GloberxBold;
-  padding: 5px 10px;
-  margin: 20px 0;
+  padding: 15px 15px 10px 15px;
+  margin: 10px 0;
 }
 
 
 
 .hero__links {
   position: absolute;
-  bottom: -60px;
+  bottom: -80px;
 }
 
 .hero__links li {
   float: left;
   margin-right: 30px;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .hero__links li a {
@@ -65,11 +70,11 @@
   text-decoration: none;
   display: block;
   height: 150px;
-  width: 150px;
+  width: 200px;
   vertical-align: bottom;
-  padding-top: 80px;
-  padding-left: 10px;
-
+  padding-top: 90px;
+  padding-left: 15px;
+  padding-right: 40px;
 
   &:hover {
     border: 1px solid black;

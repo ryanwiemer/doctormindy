@@ -1,0 +1,23 @@
+/* --------------- *
+ *    Blockquote   *
+ * --------------- */
+
+blockquote {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  color: $highlight;
+  font-family: $GloberBookItalic;
+  font-size: 28px;
+  line-height: 1!important;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+
+
+  em {
+    color: black;
+    font-family: $GloberBold;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}

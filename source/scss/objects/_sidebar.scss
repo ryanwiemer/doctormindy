@@ -1,0 +1,39 @@
+/* --------------- *
+ *     Sidebar     *
+ * --------------- */
+
+.sidebar {
+  margin-top: 60px;
+  width: 200px;
+  display: inline-block;
+  margin-left: 75px;
+}
+
+.sidebar h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: $GloberBold;
+}
+
+.sidebar h4 {
+  font-size: 18px;
+  font-family: $GloberxBold;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.sidebar p {
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+
+.sidebar a {
+  background: $highlight;
+  padding: 10px 10px 5px;;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: $GloberBold;
+}
