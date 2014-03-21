@@ -9,7 +9,7 @@
       <h3 class="hero__subtitle"><?php the_field('hero_subtitle'); ?></h3>
       <?php if( have_rows('hero_cta') ): ?>
       <?php while ( have_rows('hero_cta') ) : the_row();?>
-      <a class="hero__cta" href="<?php the_sub_field('hero_cta_link');?>"><?php the_sub_field('hero_cta_text');?></a>
+      <a class="hero__cta" href="<?php the_sub_field('hero_cta_page');?>"><?php the_sub_field('hero_cta_text');?></a>
       <?php endwhile; else : endif; ?>
 
       <ul class="hero__links">

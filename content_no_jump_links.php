@@ -1,6 +1,6 @@
 <?php
 /**
- * The template used for displaying page content in page.php (clean up needed)
+ * The template used for pages that don't contain jump links
  */
 ?>
 
