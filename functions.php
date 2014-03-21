@@ -70,10 +70,6 @@ function remove_width_attribute( $html ) {
    return $html;
 }
 
-
-
-
-
 //Enqueue scripts and styles.
 function doctormindy_scripts() {
   wp_enqueue_style( 'doctormindy-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css' );

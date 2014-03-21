@@ -1,3 +1,12 @@
 /* --------------- *
  *   Animations    *
  * --------------- */
+
+.hero__links li a, .hero__links li a:hover,  {
+  transition: all .15s ease-in-out;
+}
+
+
+.navigation ul li, .navigation ul li:hover {
+   transition: border-color .15s ease-in-out;
+ }

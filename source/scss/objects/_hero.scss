@@ -18,23 +18,22 @@
 
 .hero__title {
   font-family: $GloberRegular;
-  font-size: 56px;
+  font-size: 46px;
   text-align: left;
-  @include span-columns(7);
+  @include span-columns(6);
   margin-top: 80px;
   color: $secondary;
+  margin-bottom: 32px;
+
 }
 
 .hero__subtitle {
   font-family: $GloberSemiBold;
   font-size: 24px;
   text-align: left;
-  margin-top: 28px;
   color: $secondary;
   line-height: 1.2;
-  text-align: left;
-  clear: both;
-  width: 500px;
+  @include span-columns(6);
 }
 
 .hero__cta {

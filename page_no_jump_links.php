@@ -1,6 +1,6 @@
 <?php
 /**
- * No Jump Links Template
+ * Template Name: No Jump Links Template
  */
 get_header(); ?>
 
