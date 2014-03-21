@@ -37,3 +37,11 @@ hr {
   border-bottom: 1px solid black;
   margin-top: 40px;
 }
+
+.section:before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+}

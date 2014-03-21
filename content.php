@@ -14,15 +14,18 @@
       <a class="hero__cta" href="<?php the_sub_field('hero_cta_page');?>"><?php the_sub_field('hero_cta_text');?></a>
       <?php endwhile; else : endif; ?>
 
-      <ul class="hero__links">
-      <?php if( have_rows('sections') ): ?>
-      <?php $i=1; ?>
-      <?php while ( have_rows('sections') ) : the_row();?>
-        <li><a href="#section-<?php echo $i++;?>"><?php the_sub_field('section_label');?></a></li>
-      <?php endwhile; else : endif; ?>
-      </ul>
     </div> <!-- hero__content -->
 </div> <!-- hero -->
+
+<div class="container">
+<ul class="section__links">
+<?php if( have_rows('sections') ): ?>
+<?php $i=1; ?>
+<?php while ( have_rows('sections') ) : the_row();?>
+  <li><a href="#section-<?php echo $i++;?>"><?php the_sub_field('section_label');?></a></li>
+<?php endwhile; else : endif; ?>
+</ul>
+</div>
 
 <div class="content">
   <div class="inner">

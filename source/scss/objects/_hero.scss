@@ -12,6 +12,11 @@
   position: relative;
 }
 
+.home .hero {
+  height: 620px;
+}
+
+
 .hero__content {
   margin: 0 auto;
 }
@@ -47,21 +52,32 @@
   margin: 10px 0;
 }
 
-
-
-.hero__links {
-  position: absolute;
-  bottom: -80px;
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: -60px;
 }
 
-.hero__links li {
+//.is-sticky ul {
+  //top: -60px!important;
+//}
+
+
+.is-sticky .section__links li a{
+height: 100px;
+padding-top: 30px;
+}
+
+
+.section__links li {
   float: left;
   margin-right: 30px;
   font-size: 18px;
   line-height: 1.2;
 }
 
-.hero__links li a {
+.section__links li a {
   font-family: $GloberBold;
   background: $highlight;
   border: 1px solid $highlight;
@@ -76,7 +92,8 @@
   padding-right: 40px;
 
   &:hover {
+    background: white;
     border: 1px solid black;
-    background: none;
+
   }
 }

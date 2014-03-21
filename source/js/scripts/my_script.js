@@ -22,7 +22,10 @@ Add needed scripts here.
 												window.location.hash = target;
 										});
 								});
+								 $(".section__links").sticky();
 
+							//Add waypoints code here
+		
 		});
 
 }(jQuery));
