@@ -160,10 +160,11 @@ Add needed scripts here.
 												window.location.hash = target;
 										});
 								});
-								 $(".section__links").sticky();
+
+								$(".section-nav__links").sticky({getWidthFrom: '.content'});
 
 							//Add waypoints code here
-		
+
 		});
 
 }(jQuery));

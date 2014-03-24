@@ -2,7 +2,7 @@
  *      Main       *
  * --------------- */
 
-body {
+body, label, textarea, input {
 	font-family: $GloberRegular;
 	font-weight: normal;
 }
@@ -10,21 +10,8 @@ body {
 .content {
   width: 1000px;
   @include outer-container;
-  margin: 160px auto 60px;
+  margin: 160px auto 40px;
   border-top: 1px solid black;
-}
-
-.header {
-  width: 1000px;
-  margin-left: 20px;
-}
-
-.hero__content {
-  width: 1000px;
-}
-
-.hero {
-  min-width: 1000px;
 }
 
 .inner {
@@ -38,6 +25,21 @@ hr {
   margin-top: 40px;
 }
 
+.section a {
+  color: $highlight;
+  text-decoration: none;
+  font-family: $GloberSemiBold;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+
+.section a:after {
+  content: '\25b8';
+  padding-left: 5px;
+}
 .section:before {
   display: block;
   content: " ";

@@ -3,6 +3,7 @@
  * --------------- */
 
 .hero {
+  min-width: 1000px;
   height: 450px;
   background-position: center;
   -webkit-background-size: cover;
@@ -12,12 +13,12 @@
   position: relative;
 }
 
-.home .hero {
-  height: 620px;
-}
-
+//.home .hero {
+//height: 550px;
+//}
 
 .hero__content {
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -28,20 +29,24 @@
   @include span-columns(6);
   margin-top: 80px;
   color: $secondary;
-  margin-bottom: 32px;
-
 }
 
 .hero__subtitle {
+  margin-top: 32px;
   font-family: $GloberSemiBold;
   font-size: 24px;
-  text-align: left;
   color: $secondary;
   line-height: 1.2;
-  @include span-columns(6);
+  float: left;
+  width: 50%
 }
 
 .hero__cta {
+  margin-top: 16px;
+  @include span-columns(12);
+}
+
+.hero__cta a {
   float:left;
   background: $highlight;
   color: black;
@@ -52,7 +57,20 @@
   margin: 10px 0;
 }
 
-.container {
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-nav {
   width: 1000px;
   margin: 0 auto;
   position: relative;
@@ -63,21 +81,35 @@
   //top: -60px!important;
 //}
 
-
-.is-sticky .section__links li a{
-height: 100px;
-padding-top: 30px;
+@media (min-width: 1000px)  {
+  .is-sticky .section-nav__links li a{
+  height: 100px;
+  padding-top: 30px;
+  }
 }
 
+@media (max-width: 1000px)  {
+.section-nav__links {
+  position:relative!important;
+}
+}
+.home .section-nav__links  {
+  position:relative!important;
+}
 
-.section__links li {
+.home .section-nav__links li a {
+  height: 150px!important;
+  padding-top: 90px!important;
+}
+
+.section-nav__links li {
   float: left;
   margin-right: 30px;
   font-size: 18px;
   line-height: 1.2;
 }
 
-.section__links li a {
+.section-nav__links li a {
   font-family: $GloberBold;
   background: $highlight;
   border: 1px solid $highlight;

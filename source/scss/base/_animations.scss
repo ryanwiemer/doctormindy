@@ -6,7 +6,7 @@
    transition: border-color .15s ease-in-out;
  }
 
-.section__links li a {
+.section-nav__links a {
 transition-property: padding, height, background;
 transition-duration: 400ms, 400ms, 150ms;
 }
