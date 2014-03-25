@@ -10,13 +10,13 @@
   float: right;
 }
 
-.sidebar h3 {
+.sidebar__title {
   text-transform: uppercase;
   font-size: 18px;
   font-family: $GloberBold;
 }
 
-.sidebar h4 {
+.sidebar__title--alt {
   font-size: 16px;
   font-family: $GloberxBold;
   text-transform: uppercase;
@@ -29,8 +29,16 @@
   line-height: 1.2;
 }
 
+.sidebar__contact-info li span {
+  padding-left: 20px;
+}
 
-.sidebar a {
+.sidebar__contact-info li {
+  padding-bottom: 10px;
+}
+
+
+.sidebar__btn {
   background: $highlight;
   padding: 10px 10px 5px;;
   text-decoration: none;

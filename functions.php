@@ -72,14 +72,18 @@ function remove_width_attribute( $html ) {
 
 //Enqueue scripts and styles.
 function doctormindy_scripts() {
-  wp_enqueue_style( 'doctormindy-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css' );
+  wp_enqueue_style( 'doctormindy-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
   wp_enqueue_script( 'doctormindy-script',  get_template_directory_uri() . '/assets/js/global.min.js', array('jquery'));
 
 }
 add_action( 'wp_enqueue_scripts', 'doctormindy_scripts' );
 
 
-
+//Register Menu
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
 
 
 //Page Slug Body Class
@@ -92,3 +96,17 @@ $classes[] = $post->post_type . '-' . $post->post_name;
 return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
+
+
+// Add the Contact Form 7 scripts only on the contact page
+function deregister_cf7_js() {
+    if ( !is_page('contact-us')) {
+        wp_deregister_script( 'contact-form-7');
+    }
+}
+add_action( 'wp_print_scripts', 'deregister_cf7_js' );
+
+function deregister_ct7_styles() {
+    wp_deregister_style( 'contact-form-7');
+}
+add_action( 'wp_print_styles', 'deregister_ct7_styles');

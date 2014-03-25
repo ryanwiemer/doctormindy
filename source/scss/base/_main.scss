@@ -22,7 +22,7 @@ hr {
   height: 0;
   border: 0;
   border-bottom: 1px solid black;
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .section a {
@@ -43,7 +43,7 @@ hr {
 .section:before {
   display: block;
   content: " ";
-  margin-top: -100px;
-  height: 100px;
+  margin-top: -75px;
+  height: 75px;
   visibility: hidden;
 }

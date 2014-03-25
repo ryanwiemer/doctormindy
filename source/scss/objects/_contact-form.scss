@@ -95,7 +95,7 @@
 
 
 
-
+//errors
 
 .wpcf7-response-output {
   float: left;
@@ -107,12 +107,12 @@
   border: none!important;
 }
 
-
 .wpcf7-not-valid-tip {
   float: right;
   position: relative;
   top: -65px;
   right: 100px;
+  color: red;
 }
 
 .wpcf7-validation-errors {
