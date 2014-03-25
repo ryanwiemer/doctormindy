@@ -163,7 +163,7 @@ Add needed scripts here.
 
 								$(".section-nav__links").sticky({getWidthFrom: '.content'});
 
-							//Add waypoints code here
+							//Add jQuery Waypoints here
 
 		});
 

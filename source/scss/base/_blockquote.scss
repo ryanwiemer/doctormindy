@@ -5,7 +5,7 @@
 blockquote {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  color: $highlight;
+  color: #7cc1d4;
   font-family: $GloberBookItalic;
   font-size: 28px;
   line-height: 1!important;
@@ -25,7 +25,7 @@ blockquote {
 
 .page-home blockquote {
   @include span-columns(18);
-  margin-top: 140px;
+  margin-top: 160px;
   margin-bottom: -60px;
   border-bottom: none;
 }

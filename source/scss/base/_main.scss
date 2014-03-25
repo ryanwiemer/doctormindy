@@ -25,6 +25,10 @@ hr {
   margin-top: 45px;
 }
 
+.section {
+  @extend %clearfix;
+}
+
 .section a {
   color: $highlight;
   text-decoration: none;
@@ -34,7 +38,6 @@ hr {
 .section a:hover {
   text-decoration: underline;
 }
-
 
 .section a:after {
   content: '\25b8';

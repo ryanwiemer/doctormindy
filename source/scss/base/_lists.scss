@@ -1,7 +1,11 @@
 /* --------------- *
  *      Lists      *
  * --------------- */
-.page-patients .section li {
+.page-patients .section li, .page-procedures .section li  {
   list-style-type: disc;
   padding-top: 15px;
+}
+
+.page-procedures .section ul {
+  @include span-columns(6);
 }
