@@ -30,6 +30,8 @@ blockquote {
   border-bottom: none;
 }
 
-.page-about-us blockquote {
-  margin-bottom: 20px;
+.page-about-us blockquote  {
+  @include span-columns(18);
+  margin-bottom: -60px;
+  border-bottom: none;
 }
