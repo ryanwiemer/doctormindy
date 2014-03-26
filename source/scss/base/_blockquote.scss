@@ -9,10 +9,8 @@ blockquote {
   font-family: $GloberBookItalic;
   font-size: 28px;
   line-height: 1!important;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding: 10px 0 20px 0;
+  margin: 40px 0 40px 0;
 
 
   em {
@@ -25,8 +23,7 @@ blockquote {
 
 .page-home blockquote {
   @include span-columns(18);
-  margin-top: 160px;
-  margin-bottom: -60px;
+  margin: 160px 0 -60px 0;
   border-bottom: none;
 }
 

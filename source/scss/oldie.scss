@@ -2,7 +2,6 @@
  *      Oldie      *
  * --------------- */
 
-$oldie: true;
 // Bourbon.io w/ Neat
 @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../../bower_components/neat/app/assets/stylesheets/neat";
@@ -13,7 +12,6 @@ $oldie: true;
 //Generic
 @import "generic/_reset";
 @import "generic/_clearfix";
-@import "generic/_mq";
 
 //Base
 @import "base/_main";

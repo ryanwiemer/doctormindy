@@ -16,7 +16,6 @@
   "dependencies": {
     "bourbon": "latest",
     "neat": "latest",
-    "sticky": "*",
-    "jquery-waypoints": "~2.0.4"
+    "sticky": "*"
   }
 }

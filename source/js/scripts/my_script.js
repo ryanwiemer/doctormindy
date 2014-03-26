@@ -12,7 +12,7 @@ var curNav,
 		"use strict";
 
 		$(function() {
-
+//Easying Animations
 				$('a[href^="#"]').on('click',function (e) {
 										e.preventDefault();
 
@@ -26,51 +26,43 @@ var curNav,
 										});
 								});
 
+//Sticky Plugin for sticky nav
 								$(".section-nav__links").sticky({getWidthFrom: '.content'});
 
-							//Add jQuery Waypoints here
+//Navigation highlighting
 
-							$('#undefined-sticky-wrapper ul li a').click(function(e){
-								e.preventDefault();
-								if(!animating) {
-									var id = $(this).attr("href"),
-										target = $(id).offset().top - offset;
+    var aChildren = $(".section-nav__links li").children(); // find the a children of the list items
+    var aArray = []; // create the empty aArray
+    for (var i=0; i < aChildren.length; i++) {
+        var aChild = aChildren[i];
+        var ahref = $(aChild).attr('href');
+        aArray.push(ahref);
+    } // this for loop fills the aArray with attribute href values
 
-									animating = true;
+    $(window).scroll(function(){
+        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+        var windowHeight = $(window).height(); // get the height of the window
+        var docHeight = $(document).height();
 
-									$('html, body').animate({
-										scrollTop: target
-									}, 500, function() {
-										setTimeout(function() {
-											animating = false;
-										}, 100);
-									});
+        for (var i=0; i < aArray.length; i++) {
+            var theID = aArray[i];
+            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+            var divHeight = $(theID).height()-75; // get the height of the div in question
+            if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                $("a[href='" + theID + "']").addClass("current");
+            } else {
+                $("a[href='" + theID + "']").removeClass("current");
+            }
+        }
 
-									$('.current').removeClass('current');
-									$(this).addClass('current');
-								}
-							});
-
-							$(window).scroll(function() {
-								if(!animating) {
-									var nextCurNav;
-
-									$('#undefined-sticky-wrapper ul li a').each(function() {
-										var thisNav = $(this),
-											id = thisNav.attr("href");
-
-										if($(id).offset().top - offset < $(window).scrollTop()) {
-											nextCurNav = thisNav;
-										}
-									});
-
-									if((typeof nextCurNav !== "undefined" && typeof curNav === "undefined") || (typeof nextCurNav !== "undefined" && curNav.attr('href') != nextCurNav.attr('href'))) {
-										$('.current').removeClass('current');
-										nextCurNav.addClass('current');
-										curNav = nextCurNav;
-									}
-								}
-							});
+        if(windowPos + windowHeight == docHeight) {
+            if (!$(".section-nav__links li:last-child a").hasClass("nav-active")) {
+                var navActiveCurrent = $(".nav-active").attr("href");
+                $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+                $(".section-nav__links li:last-child a").addClass("nav-active");
+            }
+        }
+    });
 
 		});
 
