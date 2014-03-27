@@ -44,4 +44,3 @@ get_header(); ?>
           <?php endwhile; else : endif; ?>
         </div> <!-- inner -->
         <?php get_footer(); ?>
-      </div><!-- .content -->

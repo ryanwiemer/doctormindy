@@ -8,5 +8,9 @@
 
 .section-nav__links a {
 transition-property: padding, height, background;
-transition-duration: 400ms, 400ms, 150ms;
+transition-duration: .4s, .4s, .15s;
+}
+
+.section a, .section a:hover {
+  transition: all .15s ease-in-out;
 }

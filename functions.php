@@ -3,6 +3,10 @@
  * Theme Functions
  */
 
+//Add in Advanced Custom Fields Repeater plugin contained in theme
+include_once('acf-repeater/acf-repeater.php' );
+
+
 //Register widgetized area and update sidebar with default widgets.
 function doctormindy_widgets_init() {
 	register_sidebar( array(

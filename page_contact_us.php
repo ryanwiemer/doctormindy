@@ -10,4 +10,4 @@ get_header(); ?>
     <?php the_field('contact_form'); ?>
     <?php get_footer(); ?>
   </div>
-</div><!-- .content -->
+</div>
