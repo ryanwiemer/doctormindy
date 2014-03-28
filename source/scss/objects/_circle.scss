@@ -51,9 +51,9 @@ margin-bottom: 10px;
 .circle a {
   color: black!important;
   text-decoration: none;
-  border: none;
+  border: none!important;
 }
 
 .circle a:hover {
-  border-bottom: 2px solid black;
+  color: white!important;
 }

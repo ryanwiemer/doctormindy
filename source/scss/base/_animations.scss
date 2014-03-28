@@ -11,6 +11,10 @@ transition-property: padding, height, background;
 transition-duration: .4s, .4s, .15s;
 }
 
-.section a, .section a:hover {
+.section a, .section a:hover, .hero a, .hero a:hover {
   transition: all .15s ease-in-out;
+}
+
+.section-nav__bar, .is-sticky .section-nav__bar, .sidebar__btn, .sidebar__btn:hover {
+  transition: all .3s ease-in-out;
 }

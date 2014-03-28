@@ -5,8 +5,14 @@
   list-style-type: disc;
   padding-top: 15px;
   line-height: 1.4;
+  position: relative;
+  left: 1em;
+
 }
 
 .page-procedures .section ul {
   @include span-columns(6);
 }
+.section ul li{
+   z-index: -2;
+ }

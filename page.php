@@ -22,6 +22,7 @@ get_header(); ?>
 
       <div class="section-nav">
         <ul class="section-nav__links">
+          <div class="section-nav__bar"></div>
           <?php if( have_rows('sections') ): ?>
           <?php $i=1; ?>
           <?php while ( have_rows('sections') ) : the_row();?>
@@ -31,6 +32,7 @@ get_header(); ?>
           <?php endwhile; else : endif; ?>
         </ul>
       </div>
+
 
       <div class="content">
         <?php get_sidebar(); ?>

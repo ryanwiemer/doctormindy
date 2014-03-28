@@ -51,27 +51,48 @@
   font-family: $GloberxBold;
   padding: 15px 15px 10px 15px;
   margin: 10px 0;
+
+  &:hover {
+    background: #bce5f0;
+  }
 }
 
 .page-patients .hero__cta a {
   background: white;
+  &:hover {
+    background: #eee;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .current {
   background: white!important;
   border: 1px solid black!important;
 }
+
+
+
+
+
+
+
+.section-nav__bar {
+  background: none;
+  height: 20px;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+
+
+
+
+
 
 .section-nav {
   width: 960px;
@@ -80,36 +101,14 @@
   top: -60px;
 }
 
-@media (min-width: 1000px)  {
-  .is-sticky .section-nav__links li a{
-  height: 70px;
-  padding-top: 15px;
-  }
-}
-
-@media (max-width: 1000px)  {
-.section-nav__links {
-  position:relative!important;
-}
-
-}
-.page-home .section-nav__links  {
-  position:relative!important;
-}
-
-.page-home .section-nav__links li a {
-  height: 150px!important;
-  padding-top: 90px!important;
-}
-
-.section-nav__links li {
+.section-nav__links li, .section-nav__links--home li {
   float: left;
   margin-right: 25px;
   font-size: 17px;
   line-height: 1.2;
 }
 
-.section-nav__links li a {
+.section-nav__links li a, .section-nav__links--home li a {
   font-family: $GloberBold;
   background: $highlight;
   border: 1px solid $highlight;
@@ -128,4 +127,44 @@
     border: 1px solid black;
 
   }
+}
+
+//Responsive to only show sticky nav on bigger screens
+
+@media (min-width: 1000px)  {
+  .is-sticky .section-nav__links li a{
+  height: 70px;
+  padding-top: 15px;
+  }
+
+  .is-sticky .section-nav__bar {
+    background: #eee;
+    height: 85px;
+    -webkit-box-shadow: 0px 3px 2px 0px #e8e8e8;
+    -moz-box-shadow: 0px 3px 2px 0px #e8e8e8;
+    box-shadow: 0px 3px 2px 0px #e8e8e8;
+  }
+}
+
+@media (max-width: 1000px)  {
+  .section-nav__links {
+    position:relative!important;
+  }
+}
+
+
+
+//Special styles for specific pages
+
+.page-home .section-nav__bar, .page-referring-doctors .section-nav__bar {
+  display: none;
+}
+
+.page-home .section-nav__links, .page-referring-doctors .section-nav__links {
+  position:relative!important;
+}
+
+.page-home .section-nav__links li a, .page-referring-doctors .section-nav__links li a {
+  height: 150px!important;
+  padding-top: 90px!important;
 }

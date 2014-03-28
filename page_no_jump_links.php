@@ -20,9 +20,9 @@ get_header(); ?>
     </div> <!-- hero__content -->
   </div> <!-- hero -->
 
-  <?php if( have_rows('hero_links') ): ?>
     <div class="section-nav">
-      <ul class="section-nav__links">
+      <ul class="section-nav__links--home">
+        <?php if( have_rows('hero_links') ): ?>
         <?php while ( have_rows('hero_links') ) : the_row();?>
         <li><a href="<?php the_sub_field('hero_link_page');?>"><?php the_sub_field('hero_link_text');?></a></li>
         <?php endwhile; ?>
