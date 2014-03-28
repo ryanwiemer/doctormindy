@@ -80,14 +80,14 @@
   top: -60px;
 }
 
-@media (min-width: 960px)  {
+@media (min-width: 1000px)  {
   .is-sticky .section-nav__links li a{
   height: 70px;
   padding-top: 15px;
   }
 }
 
-@media (max-width: 960px)  {
+@media (max-width: 1000px)  {
 .section-nav__links {
   position:relative!important;
 }
