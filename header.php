@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=1000">
 <title><?php wp_title( '|', true, 'right' ); ?> Doctor Mindy</title>
 
 <?php wp_head(); ?>

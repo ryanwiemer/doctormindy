@@ -3,7 +3,7 @@
  * --------------- */
 
 .hero {
-  min-width: 1000px;
+  min-width: 960px;
   height: 450px;
   background-position: center;
   -webkit-background-size: cover;
@@ -13,12 +13,8 @@
   position: relative;
 }
 
-//.home .hero {
-//height: 550px;
-//}
-
 .hero__content {
-  width: 1000px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -78,20 +74,20 @@
 }
 
 .section-nav {
-  width: 1000px;
+  width: 960px;
   margin: 0 auto;
   position: relative;
   top: -60px;
 }
 
-@media (min-width: 1000px)  {
+@media (min-width: 960px)  {
   .is-sticky .section-nav__links li a{
   height: 70px;
   padding-top: 15px;
   }
 }
 
-@media (max-width: 1000px)  {
+@media (max-width: 960px)  {
 .section-nav__links {
   position:relative!important;
 }
@@ -108,8 +104,8 @@
 
 .section-nav__links li {
   float: left;
-  margin-right: 30px;
-  font-size: 18px;
+  margin-right: 25px;
+  font-size: 17px;
   line-height: 1.2;
 }
 
@@ -121,7 +117,7 @@
   text-decoration: none;
   display: block;
   height: 150px;
-  width: 200px;
+  width: 194px;
   vertical-align: bottom;
   padding-top: 90px;
   padding-left: 15px;
