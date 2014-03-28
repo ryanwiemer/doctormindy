@@ -8,3 +8,7 @@ textarea { overflow: auto; }
   height: 70px;
   padding-top: 15px;
 }
+
+.no-borderradius .circle {
+background-image: url('../img/circle.jpg');
+}
