@@ -1,3 +1,16 @@
 /* --------------- *
  *   Animations    *
  * --------------- */
+
+.navigation ul li, .navigation ul li:hover {
+   transition: border-color .15s ease-in-out;
+ }
+
+.section-nav__links a {
+transition-property: padding, height, background;
+transition-duration: .4s, .4s, .15s;
+}
+
+.section a, .section a:hover {
+  transition: all .15s ease-in-out;
+}

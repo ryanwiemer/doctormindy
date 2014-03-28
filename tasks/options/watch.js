@@ -3,7 +3,7 @@ module.exports = {
     livereload: true,
   },
   scripts: {
-    files: ['assets/js/*.js'],
+    files: ['source/js/*.js', 'source/js/*/*.js'],
     tasks: ['jshint', 'concat', 'uglify'],
     options: {
       spawn: false,
@@ -23,8 +23,8 @@ module.exports = {
       spawn: false,
     }
   },
-  html:{
-    files: ['./**/*.html'],
+  php:{
+    files: ['**/*.php'],
     tasks: [],
     options: {
       spawn: false

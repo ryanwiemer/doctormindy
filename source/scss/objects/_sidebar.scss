@@ -1,0 +1,50 @@
+/* --------------- *
+ *     Sidebar     *
+ * --------------- */
+
+.sidebar {
+  margin-top: 60px;
+  width: 200px;
+  display: inline-block;
+  margin-right: 30px;
+  float: right;
+}
+.sidebar__address {
+    line-height: 1.45!important;
+}
+.sidebar__title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: $GloberBold;
+}
+
+.sidebar__title--alt {
+  font-size: 16px;
+  font-family: $GloberxBold;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.sidebar p {
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.sidebar__contact-info li span {
+  padding-left: 20px;
+}
+
+.sidebar__contact-info li {
+  padding-bottom: 10px;
+}
+
+
+.sidebar__btn {
+  background: $highlight;
+  padding: 10px 10px 5px;;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: $GloberBold;
+}

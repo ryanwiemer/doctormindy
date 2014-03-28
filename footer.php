@@ -1,20 +1,12 @@
 <?php
 /**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after
- *
- * @package doctormindy
+ * Footer
  */
 ?>
-
-	</div><!-- #content -->
-
 	<footer class="footer">
-			<p>Footer goes here.</p>
-	</footer><!-- .footer -->
-
+			<p class="footer__copyright">&copy; Copyright <?php echo date("Y") ?> Dr. Mindy Buoncristiani</p>
+	</footer>
+</div><!-- .content -->
 <?php wp_footer(); ?>
-
 </body>
 </html>

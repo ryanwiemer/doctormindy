@@ -1,13 +1,9 @@
 <?php
 /**
- * The Sidebar containing the main widget areas.
- *
- * @package doctormindy
+ * Sidebar
  */
 ?>
-	<div id="secondary" class="widget-area" role="complementary">
-		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-
-
-		<?php endif; // end sidebar widget area ?>
-	</div><!-- #secondary -->
+<div class="sidebar">
+	<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+	<?php endif; // end sidebar widget area ?>
+</div>

@@ -1,0 +1,60 @@
+/* --------------- *
+ *      Circle     *
+ * --------------- */
+
+.circle {
+  background: $highlight;
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
+  text-align: center;
+  padding-top: 45px;
+  @extend %clearfix;
+  float: right;
+  margin-bottom: 475px;
+  margin-left: 20px;
+}
+
+.circle__title, .circle__subtitle, .circle__number, .circle__or, .circle__link, .circle a {
+  display: inline-block;
+}
+
+.circle__title {
+width: 70%;
+font-size: 18px;
+line-height: 1.2;
+margin-bottom: 10px;
+font-family: $GloberSemiBold;
+
+}
+
+.circle__subtitle {
+width: 100%;
+margin-bottom: 15px;
+}
+
+.circle__number {
+  font-size: 26px;
+  font-family: $GloberSemiBold;
+  margin-bottom: 15px;
+}
+
+.circle__or {
+width: 100%;
+margin-bottom: 10px;
+}
+
+.circle__or:before, .circle__or:after {
+  content: " — ";
+}
+
+
+.circle a {
+  color: black!important;
+  text-decoration: none;
+  border: none;
+}
+
+.circle a:hover {
+  border-bottom: 2px solid black;
+}

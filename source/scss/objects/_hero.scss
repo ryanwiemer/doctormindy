@@ -1,0 +1,135 @@
+/* --------------- *
+ *       Hero      *
+ * --------------- */
+
+.hero {
+  min-width: 1000px;
+  height: 450px;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+//.home .hero {
+//height: 550px;
+//}
+
+.hero__content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-family: $GloberRegular;
+  font-size: 46px;
+  text-align: left;
+  @include span-columns(6);
+  margin-top: 80px;
+  color: $secondary;
+}
+
+.hero__subtitle {
+  margin-top: 32px;
+  font-family: $GloberSemiBold;
+  font-size: 24px;
+  color: $secondary;
+  line-height: 1.2;
+  float: left;
+  width: 50%
+}
+
+.hero__cta {
+  margin-top: 16px;
+  @include span-columns(12);
+}
+
+.hero__cta a {
+  float:left;
+  background: $highlight;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $GloberxBold;
+  padding: 15px 15px 10px 15px;
+  margin: 10px 0;
+}
+
+.page-patients .hero__cta a {
+  background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.current {
+  background: white!important;
+  border: 1px solid black!important;
+}
+
+.section-nav {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: -60px;
+}
+
+@media (min-width: 1000px)  {
+  .is-sticky .section-nav__links li a{
+  height: 70px;
+  padding-top: 15px;
+  }
+}
+
+@media (max-width: 1000px)  {
+.section-nav__links {
+  position:relative!important;
+}
+
+}
+.page-home .section-nav__links  {
+  position:relative!important;
+}
+
+.page-home .section-nav__links li a {
+  height: 150px!important;
+  padding-top: 90px!important;
+}
+
+.section-nav__links li {
+  float: left;
+  margin-right: 30px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.section-nav__links li a {
+  font-family: $GloberBold;
+  background: $highlight;
+  border: 1px solid $highlight;
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 150px;
+  width: 200px;
+  vertical-align: bottom;
+  padding-top: 90px;
+  padding-left: 15px;
+  padding-right: 40px;
+
+  &:hover {
+    background: white;
+    border: 1px solid black;
+
+  }
+}

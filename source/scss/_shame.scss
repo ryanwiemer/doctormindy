@@ -2,18 +2,13 @@
  *      Shame      *
  * --------------- */
 
-
-.about-collage--map__img {
-	padding-bottom: 139%;
-}
-
 textarea { overflow: auto; }
 
-.gallery-list__image {
-	width: 33%;
+.is-sticky .section-nav__links li a{
+  height: 70px;
+  padding-top: 15px;
 }
 
-
-.thumbnail__title {
-	display: none!important;
+.no-borderradius .circle {
+background-image: url('../img/circle.jpg');
 }

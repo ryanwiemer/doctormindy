@@ -2,7 +2,51 @@
  *      Main       *
  * --------------- */
 
-body {
-	width: 80%;
-	margin: 0 auto;
+body, label, textarea, input {
+	font-family: $GloberRegular;
+	font-weight: normal;
+}
+
+.content {
+  width: 1000px;
+  margin: 160px auto 40px;
+  border-top: 1px solid black;
+  @extend %clearfix;
+}
+
+.inner {
+  @include span-columns(8);
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+  margin-top: 45px;
+}
+
+.section {
+  @extend %clearfix;
+}
+
+.section a {
+  color: #7cc1d4;
+  text-decoration: none;
+  font-family: $GloberSemiBold;
+}
+
+.section a:hover {
+  border-bottom: 2px solid $highlight;
+}
+.section a:after {
+  content: '\25b8';
+  padding-left: 5px;
+
+}
+.section:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
 }

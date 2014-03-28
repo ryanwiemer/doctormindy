@@ -1,35 +1,46 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package doctormindy
+ * Page template
  */
-
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+      <div class="hero" style="background-image: url('<?php the_field('hero_image'); ?>');">
+        <div class="hero__content">
+          <h2 class="hero__title"><?php the_field('hero_title'); ?></h2>
+          <?php if( have_rows('hero_subtitle') ): ?>
+          <?php while ( have_rows('hero_subtitle') ) : the_row();?>
+          <h3 class="hero__subtitle"><?php the_sub_field('hero_subtitle_text'); ?></h3>
+          <?php endwhile; else : endif; ?>
+          <?php if( have_rows('hero_cta') ): ?>
+          <?php while ( have_rows('hero_cta') ) : the_row();?>
+          <div class="hero__cta">
+            <a href="<?php the_sub_field('hero_cta_page');?>"><?php the_sub_field('hero_cta_text');?></a>
+          </div>
+          <?php endwhile; else : endif; ?>
+        </div> <!-- hero__content -->
+      </div> <!-- hero -->
 
-			<?php while ( have_posts() ) : the_post(); ?>
+      <div class="section-nav">
+        <ul class="section-nav__links">
+          <?php if( have_rows('sections') ): ?>
+          <?php $i=1; ?>
+          <?php while ( have_rows('sections') ) : the_row();?>
+          <li>
+            <a href="#section-<?php echo $i++;?>"><?php the_sub_field('section_label');?></a>
+          </li>
+          <?php endwhile; else : endif; ?>
+        </ul>
+      </div>
 
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+      <div class="content">
+        <?php get_sidebar(); ?>
+        <div class="inner">
+          <?php if( have_rows('sections') ): ?>
+          <?php $i=1; ?>
+          <?php while ( have_rows('sections') ) : the_row();?>
+          <section class="section" id="section-<?php echo $i++;?>">
+              <?php the_sub_field('section_content');?>
+          </section>
+          <?php endwhile; else : endif; ?>
+        </div> <!-- inner -->
+        <?php get_footer(); ?>
