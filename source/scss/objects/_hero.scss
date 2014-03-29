@@ -13,6 +13,10 @@
   position: relative;
 }
 
+.page-referring-doctors .hero, .page-procedures .hero {
+  background-position: center right;
+}
+
 .hero__content {
   width: 960px;
   margin: 0 auto;
@@ -82,13 +86,16 @@
   top:0;
   left: 0;
   width: 100%;
-  z-index: -1;
+  z-index: 3000;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-
+.section-nav__links li a {
+  z-index: 9999!important;
+  position: relative;
+}
 
 
 

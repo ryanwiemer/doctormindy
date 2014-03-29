@@ -22,7 +22,6 @@ get_header(); ?>
 
       <div class="section-nav">
         <ul class="section-nav__links">
-          <div class="section-nav__bar"></div>
           <?php if( have_rows('sections') ): ?>
           <?php $i=1; ?>
           <?php while ( have_rows('sections') ) : the_row();?>
@@ -30,6 +29,7 @@ get_header(); ?>
             <a href="#section-<?php echo $i++;?>"><?php the_sub_field('section_label');?></a>
           </li>
           <?php endwhile; else : endif; ?>
+            <div class="section-nav__bar"> </div>
         </ul>
       </div>
 
