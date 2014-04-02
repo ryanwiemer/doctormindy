@@ -46,7 +46,7 @@
   @include span-columns(12);
 }
 
-.hero__cta a {
+.hero__cta a, .hero__cta a:visited {
   float:left;
   background: $highlight;
   color: black;
@@ -55,28 +55,20 @@
   font-family: $GloberxBold;
   padding: 15px 15px 10px 15px;
   margin: 10px 0;
-
-  &:hover {
-    background: #bce5f0;
-  }
 }
 
-.page-patients .hero__cta a {
+.no-touch .hero__cta a:hover {
+  background: #bce5f0;
+}
+
+
+.page-patients .hero__cta a, .page-patients .hero__cta a:visited {
   background: white;
-  &:hover {
-    background: #eee;
-  }
 }
 
-.current {
-  background: white!important;
-  border: 1px solid black!important;
+.no-touch .page-patients .hero__cta a:hover {
+  background: #eee;
 }
-
-
-
-
-
 
 
 .section-nav__bar {
@@ -115,7 +107,12 @@
   line-height: 1.2;
 }
 
-.section-nav__links li a, .section-nav__links--home li a {
+.section-nav__links li a,
+.section-nav__links li a:active,
+.section-nav__links li a:visited,
+.section-nav__links--home li a,
+.section-nav__links--home li a:active,
+.section-nav__links--home li a:visited {
   font-family: $GloberBold;
   background: $highlight;
   border: 1px solid $highlight;
@@ -128,13 +125,15 @@
   padding-top: 90px;
   padding-left: 15px;
   padding-right: 40px;
-
-  &:hover {
-    background: white;
-    border: 1px solid black;
-
-  }
 }
+
+
+
+.no-touch .section-nav__links a:hover, .no-touch .section-nav__links--home li a:hover {
+  background: white;
+  border: 1px solid black;
+}
+
 
 //Responsive to only show sticky nav on bigger screens
 
@@ -151,11 +150,21 @@
     -moz-box-shadow: 0px 3px 2px 0px #e8e8e8;
     box-shadow: 0px 3px 2px 0px #e8e8e8;
   }
+
+  .current {
+    background: white!important;
+    border: 1px solid black!important;
+  }
 }
 
 @media (max-width: 1000px)  {
   .section-nav__links {
     position:relative!important;
+  }
+
+  .is-sticky .section-nav__links li a {
+    height: 150px!important;
+    padding-top: 90px!important;
   }
 }
 

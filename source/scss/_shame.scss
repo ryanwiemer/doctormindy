@@ -12,3 +12,9 @@ textarea { overflow: auto; }
 .no-borderradius .circle {
 background-image: url('../img/circle.jpg');
 }
+
+.no-boxshadow .is-sticky .section-nav__bar {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border-bottom: 2px solid #e3e3e3;
+}

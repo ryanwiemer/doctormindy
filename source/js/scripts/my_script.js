@@ -1,6 +1,6 @@
 /*
 
-Add needed scripts here.
+My Javascript Files
 
 */
 var curNav,

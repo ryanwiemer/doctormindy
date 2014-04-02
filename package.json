@@ -1,6 +1,6 @@
 {
-  "name": "rw",
-  "version": "0.0.1",
+  "name": "doctormindy",
+  "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "grunt": "~0.4.1",

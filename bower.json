@@ -1,7 +1,7 @@
 {
-  "name": "rw",
-  "version": "0.0.1",
-  "homepage": "https://github.com/ryanwiemer/rw",
+  "name": "doctormindy",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ryanwiemer/doctormindy",
   "authors": [
     "Ryan Wiemer <ryan@ryanwiemer.com>"
   ],
@@ -14,8 +14,8 @@
     "tests"
   ],
   "dependencies": {
-    "bourbon": "latest",
-    "neat": "latest",
+    "bourbon": "3.1.8",
+    "neat": "1.5",
     "sticky": "*"
   }
 }

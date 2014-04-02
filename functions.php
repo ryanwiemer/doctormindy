@@ -78,7 +78,6 @@ function remove_width_attribute( $html ) {
 function doctormindy_scripts() {
   wp_enqueue_style( 'doctormindy-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
   wp_enqueue_script( 'doctormindy-script',  get_template_directory_uri() . '/assets/js/global.min.js', array('jquery'));
-
 }
 add_action( 'wp_enqueue_scripts', 'doctormindy_scripts' );
 

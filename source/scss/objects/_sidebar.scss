@@ -39,7 +39,7 @@
 }
 
 
-.sidebar__btn {
+.sidebar__btn, .sidebar__btn:visited  {
   background: $highlight;
   padding: 10px 10px 5px;;
   text-decoration: none;
@@ -48,6 +48,6 @@
   font-family: $GloberBold;
 }
 
-.sidebar__btn:hover {
+.no-touch .sidebar__btn:hover {
   background: #bce5f0;
 }
