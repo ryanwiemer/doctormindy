@@ -3,11 +3,21 @@
  * --------------- */
 
 
+@media (max-width: 1000px) {
+  body {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+}
+
 
 body, label, textarea, input {
 	font-family: $GloberRegular;
 	font-weight: normal;
 }
+
+
+
 
 .content {
   width: 960px;
