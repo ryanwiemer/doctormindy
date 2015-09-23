@@ -25,3 +25,6 @@ assets/*
 
 #Compiled CSS folder
 source/css
+
+#Advanced Custom Fields Repeater Plugin
+acf-repeater
